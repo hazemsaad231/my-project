@@ -1,5 +1,5 @@
-'use client';
 
+import About from "./components/aboute";
 import Slider from "./components/slider";
 
 
@@ -7,10 +7,17 @@ export default function Home() {
 
 
 
+ 
+
+
+
 
   return (
-  <div className="flex justify-center items-center">
-      <Slider/>
+  <div className="flex flex-col justify-center items-center">
+  
+      <Slider />
+      <About/>
+  
   </div>
   );
 }
