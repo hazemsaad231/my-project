@@ -18,7 +18,7 @@ export default function Header() {
     };
 
   return (
-    <header>
+    <header className="hidden md:block">
       <div className="h-12 bg-white flex justify-end items-center pl-20">
         <FaFacebook className="inline m-2 text-xl text-[#028E81]"/>
         <FaXTwitter className="inline m-2 text-xl text-[#028E81]"/>

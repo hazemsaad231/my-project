@@ -27,7 +27,7 @@ const SwiperComponent = () => {
               <img
                 src={item.image}
                 alt={item.title}
-                className="slide-img w-full h-full object-cover"
+                className="slide-img w-full h-full"
               />
 
               <div className=" absolute inset-0 flex flex-col gap-6 items-center justify-center bg-black/30">
@@ -35,8 +35,11 @@ const SwiperComponent = () => {
   className="
     relative z-10
     text-white
- 
-    w-[903px] h-[85px]
+    w-[full]
+    sm:w-[full]
+    md:w-[400px]
+    lg:w-[600px]
+    xl:w-[900px] h-[85px]
     min-w-0 min-h-0
     max-w-none max-h-none
     text-center
