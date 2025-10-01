@@ -30,7 +30,7 @@ const SwiperComponent = () => {
                 className="slide-img w-full h-full"
               />
 
-              <div className=" absolute inset-0 flex flex-col gap-6 items-center justify-center bg-black/30">
+              <div className=" absolute inset-0 flex flex-col gap-6 items-center justify-center">
                 <p
   className="
     relative z-10
@@ -57,7 +57,7 @@ const SwiperComponent = () => {
   {item.title}
 </p>
 
-                <button className="bg-white cursor-pointer text-xl text-black px-8 py-3 rounded-lg hover:bg-[#056158] hover:text-white  transition duration-300">
+                <button className="bg-white cursor-pointer mt-8 text-xl text-black px-8 py-3 rounded-lg hover:bg-[#056158] hover:text-white  transition duration-300">
                   اقرأ المزيد
                 </button>
               </div>

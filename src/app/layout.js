@@ -1,13 +1,13 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "./pages/header";
-import { Cairo, Amiri } from "next/font/google";
+import Header from "./pages/navbar/header";
+import { Cairo, Amiri, Tajawal } from "next/font/google";
 import { ContextProvider } from "@/Context/context";
 import "./globals.css"; // لو عندك
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import Footer from "./footer/page";
+import Footer from "./pages/footer/page";
 
 
 
@@ -17,6 +17,13 @@ export const cairo = Cairo({
   display: "swap",
   variable: "--font-cairo",
 });
+
+export const tajawal = Tajawal({
+  subsets: ["arabic"],
+  weight: ["200","300","400"],
+  display: "swap",
+  variable: "--font-tajawal",
+})
 
 export const amiri = Amiri({
   subsets: ["arabic"],
@@ -43,7 +50,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${cairo.variable} ${amiri.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${cairo.variable} ${tajawal.variable} ${amiri.variable} antialiased`}
       >
         <ContextProvider>
           <Header/>

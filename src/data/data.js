@@ -26,3 +26,18 @@ const Data = [
 
 export default Data;
 
+export const TheData = [
+    {
+        id: 1,
+        icon: 'https://img.icons8.com/ios-glyphs/30/000000/phone.png',
+        title: '010 000 0000',
+        link: 'tel:0100000000'
+    },
+    {
+        id: 2,
+        icon: 'https://img.icons8.com/ios-glyphs/30/000000/phone.png',
+        title: '010 000 0000',
+        link: 'tel:0100000000'
+    }
+]
+

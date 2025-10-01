@@ -1,7 +1,7 @@
 import SwiperComponent from "./swiper";
 
 
-export default function App() {
+export default function Slider() {
 
 
 
